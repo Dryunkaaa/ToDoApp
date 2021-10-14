@@ -8,7 +8,7 @@ const selectAllBtn = document.getElementById('selectAll');
 
 let taskList = [];
 
-controlsPanel.style.display = 'none';
+controlsPanel.style.display = 'none'; 
 
 selectAllBtn.addEventListener('click', ()=>{
     taskList.forEach(task => task.selected = true);
