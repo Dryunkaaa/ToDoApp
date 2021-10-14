@@ -6,8 +6,34 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ToDo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4>ToDo application</h4>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-primary" type="button" id="selectAll">Select all</button>
+            </div>
+            <input type="text" class="form-control" id="taskInput">
+        </div>
+        <div id="controls-panel" class="mt-1 mb-1">
+            <button class="btn btn-success   control-button" type="button" id="doneAllButton">Done</button>
+            <button class="btn btn-secondary control-button" type="button" id="restoreAllButton">Restore</button>
+            <button class="btn btn-danger    control-button" type="button" id="removeAllButton">Remove</button>
+        </div>
 
+        <ul class="list-group list-group-flush" id="tasksContainer">
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

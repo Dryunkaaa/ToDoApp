@@ -1,0 +1,19 @@
+#controls-panel{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control-button{
+    flex: 0 0 33.33%;
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+}
+
+.done-task {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
